@@ -1,0 +1,57 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Records</title>
+
+
+</head>
+<body>
+<p><center><b>STUDENT INFO</b></center>
+<table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>ID</th>
+        <th>FName</th>
+        <th>LName</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>Reamrks</th>
+        <th>createdAt</th>
+        <th>updatedAt</th>
+
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+         <td>{{ mylist.id }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.First_Name }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Last_Name }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Email }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Age }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Mobile }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Gender }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.Remarks }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.created_at }}</td>&nbsp;&nbsp;
+        <td>{{ mylist.updated_at }}</td>&nbsp;&nbsp;
+        <td>
+
+        </td>
+    </tr>
+
+    </tbody>
+</table>
+
+
+<br>
+<br>
+<h5><center><a href="/First/">First Page</a></center></h5>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>id</title>
+    <script>
+        var id1;ssssss
+        function onload(){
+         id1 = document.getElementById('id')
+        }
+        function myfunction(){
+             location.href='/single/?id='+id1.value;
+        }
+
+        function Delfunction(){
+             location.href='/delete/?id='+id1.value;
+
+        }
+        function Upfunction(){
+             location.href='/update/?id='+id1.value;
+
+        }
+    </script>
+</head>
+<body onload="onload();">
+<center>
+
+<form>
+
+<label> STUDENT ID:</label>&nbsp;
+<input type="text" name="id" id="id"/> <br><br>
+<input type="button" value="Get Data"  onclick="myfunction();">
+<input type ="button" value="Delete Data" onclick="Delfunction()">
+<input type ="button" value="Update Data" onclick="Upfunction()">
+
+</form>
+
+
+
+</center>
+</body>
+</html>
