@@ -61,96 +61,26 @@ import os
 #     print("File is not empty")
 
 
-# def find(name,path):
-#     # print(len(path))
-#     # if len(path) == 0:
-#     #     print("empty dir")
-#     # else:
-#     #     print("not empty dir")
-#     for root, dirs,files in os.walk(path):
-#         if name in files:
-#             return os.path.join(root, name)
-#     else:
-#        print("NO file is there")
-#
-#
-# name = 'myfile.txt'
-# path = "D:\studProduce\django_rest_framework"
-# a = find(name, path)
-# print(a)
+def find(name,path):
+    # print(len(path))
+    # if len(path) == 0:
+    #     print("empty dir")
+    # else:
+    #     print("not empty dir")
+    for root, dirs,files in os.walk(path):
+        if name in files:
+            os.remove(name)
+            print("removed successfully")
+            # return os.path.join(root, name)
+        else:
+           print("NO file is there")
 
 
-# def read_file_line():
-#     with open("D:\studProduce\django_rest_framework\StudProduce\myfile.txt"
-#               ) as file:
-#         for i, line in enumerate(file, 1):
-#             if i == 23:
-#                 break
-#         print(line)
-# read_file_line()
-
-def additionofnumber():
-    sum = 0
-    with open("D:\studProduce\django_rest_framework\StudProduce\Examples\myfile.txt",
-              'r')as file:
-        sum = 0
-        for i in file:
-            try:
-                num = int(i)
-                # import pdb;pdb.set_trace()
-                if num%2==1:
-                    print(i)
-
-            except:
-                continue
+name = 'xyz.py'
+path = "D:\studProduce\django_rest_framework"
+a = find(name, path)
+print(a)
 
 
-        # for i in file:
-        #     try:
-        #         num = int(i)
-        #         sum += num
-        #
-        #     except ValueError:
-        #         print('{} is not a number'.format(i))
-        #
-        # print(sum)
 
 
-additionofnumber()
-
-
-#
-# class A(object):
-#     def dispaly(self):
-#         print("A")
-#
-#
-# class B(A):
-#     def dispaly(self):
-#         print("B")
-#
-#
-# class C(A):
-#     # def dispaly(self):
-#     #     print("C")
-#     pass
-#
-# class D(C,B):
-#     pass
-#
-# c1 = D()
-# c1.dispaly()
-#
-#
-# def add_digits():
-#     num = 231
-#     sum = 1
-#     while num > 0:
-#         rem = num % 10
-#
-#         sum = sum * rem
-#         num = num // 10
-#     print(sum)
-#
-#
-# add_digits()
